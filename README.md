@@ -4,9 +4,7 @@
 
 ## Mundos virtuales: Introducción a la programación de gráficos 3D
 
-![][image1]
-
-![][image2]
+<img width="1085" height="1084" alt="image" src="https://github.com/user-attachments/assets/55b16397-262a-4a7a-b4d0-5d8fc0210a20" />
 
 ## **Índice** {#índice}
 
