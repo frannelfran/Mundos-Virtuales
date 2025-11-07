@@ -6,56 +6,6 @@
 
 <img width="1085" height="1084" alt="image" src="https://github.com/user-attachments/assets/55b16397-262a-4a7a-b4d0-5d8fc0210a20" />
 
-## **Índice** {#índice}
-
-[**Índice	2**](#índice)
-
-[1\. Qué funciones se pueden usar en los scripts de Unity para llevar a cabo traslaciones, rotaciones y escalados.	4](#qué-funciones-se-pueden-usar-en-los-scripts-de-unity-para-llevar-a-cabo-traslaciones,-rotaciones-y-escalados.)
-
-[2\. ¿Cómo trasladarías la cámara 2 metros en cada uno de los ejes y luego la rotas 30º alrededor del eje Y?. Rota la cámara alrededor del eje Y 30ª y desplázate 2 metros en cada uno de los ejes. ¿Obtendrías el mismo resultado en ambos casos?. Justifica el resultado.	4](#¿cómo-trasladarías-la-cámara-2-metros-en-cada-uno-de-los-ejes-y-luego-la-rotas-30º-alrededor-del-eje-y?.-rota-la-cámara-alrededor-del-eje-y-30ª-y-desplázate-2-metros-en-cada-uno-de-los-ejes.-¿obtendrías-el-mismo-resultado-en-ambos-casos?.-justifica-el-resultado.)
-
-[a. Primero trasladar y luego rotar	4](#primero-trasladar-y-luego-rotar)
-
-[b. Rotar primero y luego trasladar	4](#rotar-primero-y-luego-trasladar)
-
-[3\. Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura un volumen de vista que la recorte parcialmente.	5](#sitúa-la-esfera-de-radio-1-en-el-campo-de-visión-de-la-cámara-y-configura-un-volumen-de-vista-que-la-recorte-parcialmente.)
-
-[4\. Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura el volumen de vista para que la deje fuera de la vista.	6](#sitúa-la-esfera-de-radio-1-en-el-campo-de-visión-de-la-cámara-y-configura-el-volumen-de-vista-para-que-la-deje-fuera-de-la-vista.)
-
-[5\. Cómo puedes aumentar el ángulo de la cámara. Qué efecto tiene disminuir el ángulo de la cámara.	6](#cómo-puedes-aumentar-el-ángulo-de-la-cámara.-qué-efecto-tiene-disminuir-el-ángulo-de-la-cámara.)
-
-[6\. Es correcta la siguiente afirmación: Para realizar la proyección al espacio 2D, en el inspector de la cámara, cambiaremos el valor de projection, asignándole el valor de orthographic	7](#es-correcta-la-siguiente-afirmación:-para-realizar-la-proyección-al-espacio-2d,-en-el-inspector-de-la-cámara,-cambiaremos-el-valor-de-projection,-asignándole-el-valor-de-orthographic)
-
-[7\. Especifica las rotaciones que se han indicado en los ejercicios previos con la utilidad quaternion.	7](#especifica-las-rotaciones-que-se-han-indicado-en-los-ejercicios-previos-con-la-utilidad-quaternion.)
-
-[8\. ¿Como puedes averiguar la matriz de proyección en perspectiva que se ha usado para proyectar la escena al último frame renderizado?	7](#¿como-puedes-averiguar-la-matriz-de-proyección-en-perspectiva-que-se-ha-usado-para-proyectar-la-escena-al-último-frame-renderizado?)
-
-[9\. ¿Cómo puedes averiguar la matriz de proyección en perspectiva ortográfica que se ha usado para proyectar la escena al último frame renderizado?	8](#¿cómo-puedes-averiguar-la-matriz-de-proyección-en-perspectiva-ortográfica-que-se-ha-usado-para-proyectar-la-escena-al-último-frame-renderizado?)
-
-[10\. ¿Cómo puedes obtener la matriz de transformación entre el sistema de coordenadas local y el mundial?	8](#¿cómo-puedes-obtener-la-matriz-de-transformación-entre-el-sistema-de-coordenadas-local-y-el-mundial?)
-
-[11\. Cómo puedes obtener la matriz para cambiar al sistema de referencia de vista	9](#cómo-puedes-obtener-la-matriz-para-cambiar-al-sistema-de-referencia-de-vista)
-
-[12\. Especifica la matriz de la proyección usado en un instante de la ejecución del ejercicio 1 de la práctica 1\.	9](#especifica-la-matriz-de-la-proyección-usado-en-un-instante-de-la-ejecución-del-ejercicio-1-de-la-práctica-1.)
-
-[13\. Especifica la matriz de modelo y vista de la escena del ejercicio 1 de la práctica 1\.	10](#especifica-la-matriz-de-modelo-y-vista-de-la-escena-del-ejercicio-1-de-la-práctica-1.)
-
-[14\. Aplica una rotación en el start de uno de los objetos de la escena y muestra la matriz de cambio al sistema de referencias mundial.	11](#aplica-una-rotación-en-el-start-de-uno-de-los-objetos-de-la-escena-y-muestra-la-matriz-de-cambio-al-sistema-de-referencias-mundial.)
-
-[15\. ¿Cómo puedes calcular las coordenadas del sistema de referencia de un objeto con las siguientes propiedades del Transform:?:	11](#¿cómo-puedes-calcular-las-coordenadas-del-sistema-de-referencia-de-un-objeto-con-las-siguientes-propiedades-del-transform:?:)
-
-[Position (3, 1, 1), Rotation (45, 0, 45\)	11](#position-\(3,-1,-1\),-rotation-\(45,-0,-45\))
-
-[16\. Crea una escena en Unity con los siguientes elementos: cámara principal, plano base (como suelo) y tres cubos de distinto color (rojo, verde, azul) colocados en posiciones distintas en el espacio. Realiza un pequeño script de depuración adjunto a la cámara que permita visualizar en consola o en pantalla las matrices de transformación (Model, View, Projection) y sus resultados sobre un vértice de cada cubo.	12](#crea-una-escena-en-unity-con-los-siguientes-elementos:-cámara-principal,-plano-base-\(como-suelo\)-y-tres-cubos-de-distinto-color-\(rojo,-verde,-azul\)-colocados-en-posiciones-distintas-en-el-espacio.-realiza-un-pequeño-script-de-depuración-adjunto-a-la-cámara-que-permita-visualizar-en-consola-o-en-pantalla-las-matrices-de-transformación-\(model,-view,-projection\)-y-sus-resultados-sobre-un-vértice-de-cada-cubo.)
-
-[17\. Dibujar en un programa de dibujo el recorrido de las coordenadas de un vértice específico del cubo rojo:	14](#dibujar-en-un-programa-de-dibujo-el-recorrido-de-las-coordenadas-de-un-vértice-específico-del-cubo-rojo:)
-
-[Local → World → Camera/View → Clip → NDC → Viewport. Indicar cómo cambia su valor en cada espacio. Aplicar la transformación manualmente a un punto (por ejemplo, el vértice (0.5, 0.5, 0.5)) y registrar los resultados paso a paso.	14](#local-→-world-→-camera/view-→-clip-→-ndc-→-viewport.-indicar-cómo-cambia-su-valor-en-cada-espacio.-aplicar-la-transformación-manualmente-a-un-punto-\(por-ejemplo,-el-vértice-\(0.5,-0.5,-0.5\)\)-y-registrar-los-resultados-paso-a-paso.)
-
-[18\. Mover o rotar uno de los cubos y mostrar cómo cambian los valores de su matriz de modelo. Rotar la cámara y mostrar cómo se modifica la matriz de vista. Cambiar entre proyección ortográfica y perspectiva y comparar las diferencias numéricas en la matriz de proyección.	16](#mover-o-rotar-uno-de-los-cubos-y-mostrar-cómo-cambian-los-valores-de-su-matriz-de-modelo.-rotar-la-cámara-y-mostrar-cómo-se-modifica-la-matriz-de-vista.-cambiar-entre-proyección-ortográfica-y-perspectiva-y-comparar-las-diferencias-numéricas-en-la-matriz-de-proyección.)
-
-## 
-
 1. ### **Qué funciones se pueden usar en los scripts de Unity para llevar a cabo traslaciones, rotaciones y escalados.** {#qué-funciones-se-pueden-usar-en-los-scripts-de-unity-para-llevar-a-cabo-traslaciones,-rotaciones-y-escalados.}
 
 * Transform.**translate** → Para realizar translaciones  
